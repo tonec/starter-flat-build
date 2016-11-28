@@ -1,0 +1,29 @@
+//- Mixin for each menu item
+mixin menu-item(path, text)
+	li(role="menuitem")
+		a(href="#{path}", title="#{text}")&attributes(attributes) #{text}
+		if block
+			block
+
+//- Primary navigation
+nav.container(role="menubar")
+	.nav-header.clearfix
+		a(class="header-logo", href="/", rel="home")
+			img(
+				src="./img/ui/logo/kcl-logo.jpg",
+				alt="King's College London"
+			)
+
+		.nav-heading
+			h4 Main menu
+
+		.nav-close#nav-close
+			a.close
+				svg(class="icon")
+					use(xlink:href="#ui-nav-close")
+
+	.menu-container
+		ul(role="menu")
+			+menu-item("#", "Menu Item 1")(class="active")
+			+menu-item("#", "Menu Item 2")
+			+menu-item("#", "Menu Item 3")

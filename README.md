@@ -30,11 +30,13 @@ Install the free Live Reload plugin for Chrome for automatic browser reloading.
 ## Additional tasks
 
 - gulp
+
 Default task. Runs local development build. Compiles the scss and jade templates, bundles the JavaScript, performs and linting and runs all tests. Javascipt is linted and concatenated but not minified. The default task does not include any tasks related to images because these are a little slower. Use 'gulp img' when adding new image assets.
 
 - gulp img
+
 This copies all images from `src/img` to `dist/img` optimising them with imagemin along the way. This also generates the svg symbol sprite, which is included in the page templates, and generates png fallback images for IE8 and below.
 
 - gulp clean
+
 Deletes the `dist/` directory.
-# starter-flat-build

@@ -1,0 +1,31 @@
+doctype html
+html(lang="en", class="no-js")
+
+	include ./base-partials/head.part.jade
+
+	body
+
+		//- Page wrap
+		.page-wrap
+
+			//- SVG sprite
+			.svg-store.hidden
+				include ./base-partials/svg-sprite/sprite.symbol.svg
+
+			//- Accessibility links
+			a(class="visually-hidden focusable", href="#nav")
+				| Jump to the navigation
+			a(class="visually-hidden focusable", href="#content")
+				| Jump to the main content
+
+			include ./base-partials/masthead.part.jade
+
+			//- MAIN CONTENT
+			main(role="main")
+				block content
+
+		//- Sticky footer wrap
+		.footer-wrap
+			include ./base-partials/footer.part.jade
+
+		include ./base-partials/tail.part.jade

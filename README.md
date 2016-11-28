@@ -7,6 +7,7 @@ This is a project starter for flat html builds. Uses Gulp for build tasks and in
 - SVG Sprites
 - Image processing
 - Browserify for commonJS modules
+- Karma test runner with Jasmine
 - Linting
 - Style checking
 

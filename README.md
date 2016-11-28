@@ -1,6 +1,9 @@
-#Setup local front-end environment and install front-end development dependencies
+#Starter Flat Html Build
 
-This is a project starter for flat html builds. Uses Gulp for build tasks and includes the following in the setup:
+This is a project starter for flat html builds, useful for developing flat html and assets for later integration into dynamic environments, should this ever be a necessary requirement.
+
+Uses Gulp for build tasks and includes the following in the setup:
+
 - Jade
 - SCSS (inc some useful helpers for breakpoints and typographical vertical rhythm)
 - Susy (SASS build your own grid system)
